@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: MSSansSerif;
+    src: url(../font/MSSansSerif.ttf) format('truetype');
+}
+@font-face {
+    font-family: MSSansSerifPixel;
+    src: url(../font/AdobeDia.ttf) format('truetype');
+}
+body {
+    font-family: MSSansSerifPixel;
+    font-size: 20px;
+    background-image: url("../img/background.gif");
+}
+.container {
+    padding: 0.25em 2em;
+}
+.flexTable {
+    display: flex;
+    flex-wrap: wrap;
+}
+.desktopIcon {
+    width: 8em;
+    text-align: center;
+    color: #FFF;
+}
+.desktopIcon>img {
+    width: 2em;
+}
+.win95released {
+	border-bottom: inset 2px black;
+	border-right: inset 2px black;
+	border-top: inset 2px white;
+	border-left: inset 2px white;
+}
+.win95pressed {
+	border-top: inset 2px black;
+	border-left: inset 2px black;
+	border-bottom: inset 2px white;
+	border-right: inset 2px white;
+}
+.popup {
+    display: none;
+    position: absolute;
+    z-index: 9;
+    background-color: #C0C0C0;
+    width: 20em;
+}
+.popupHeader {
+    cursor: move;
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #010081;
+    color: #FFF;
+    padding: 0 5px 0 10px;
+}
+.popupBody {
+    padding: 0 10px;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+	border-top: inset 2px black;
+	margin-top: 10px;
+	background-color: #c0c0c0;
+    padding: 0.25em 1em;
+	color: #000;
+}
+footer>div {
+    padding: 0 3px;
+    border: 2px solid transparent;
+}
